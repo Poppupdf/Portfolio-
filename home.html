@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+<style>
+
+*{
+        padding: 0;
+        margin: 0;
+    }
+    /*content ki css starts from here */
+    #content p
+    {
+      font-size: 13px;
+      padding: 0px;  
+    }
+    #content h2{
+      padding: 0px;
+      position: relative;
+      bottom: 13px;
+    }
+    /*set id ki css starts from here */
+    #set
+    {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+/*pset id ki css starts from here */
+#pset{
+    position: relative;
+    left: 600px;
+}
+
+/*pset1 id ki css starts from here */
+#pset1{
+    position: relative;
+    left: 620px;
+    cursor: pointer;
+}
+ul li img{
+    width: 40px;
+    border-radius: 20px;
+    word-spacing: 10px;
+    cursor: pointer;
+}
+
+/*main id ki css starts from here */
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+   height: 500px;
+  width: 1330px;
+  border: 4px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0px 0px ;
+  background-color:white;
+  box-shadow: 1px 1px 3px 8px rgb(238, 240, 231);
+}
+
+
+
+/*that class ki css starts from here */
+.that
+{
+    background-color: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+/*that class ke ander ke div ki css starts from here */
+.that div{
+    width: 300px;
+    height: 300px;
+    border-radius: 17px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px 4px rgb(240, 239, 239);
+    border: 1px solid gainsboro;
+}
+/*that class ke ander ke div ke ander ke h3 tag ki css starts from here */
+.that div h2
+{
+    text-align: center;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*that class ke ander ke div ke ander ke p tag ki css starts from here */
+.that div p
+{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*thatmain id ke ander ke h1 ki css starts from here*/
+#thatmain h1{
+  text-align: center;
+}
+
+
+
+  .footer {
+    font-family: Arial, sans-serif;
+    background-color: #37474F;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items:center;
+  }
+
+  .footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FF9800;
+  }
+  #gmail{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  
+  
+  
+  /* Styling for the main contact section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+
+  /* Styling for the left side content */
+  .left-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  /* Styling for the right side content (contact form) */
+  .right-content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.678);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /*main id ke ander ki css starts from here */
+  #main img{
+    border-radius: 100%;
+    width: 300px;
+    border: 2px solid ;
+  }
+</style>
+
+<style>
+  @media (min-width:270px) and (max-width:480px) 
+{
+
+  
+  /*main id ke ander ki css starts from here */
+  #main img{
+    border-radius: 100%;
+    width: 150px;
+    border: 2px solid ;
+  }
+  /*gmail id ki css starts from here */
+  #gmail{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+/*main id ki css starts from here */
+#main{
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 270px;
+  border: 4px ;
+  margin: auto;
+  box-shadow: 1px 1px 3px 8px rgb(238, 240, 231);
+  box-sizing: border-box;
+  border-radius: 30px;
+ }
+
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+/*pset id ki css starts from here */
+#pset{
+    position: relative;
+    left: 0px;
+    right: 600px;
+}
+
+/*pset1 id ki css starts from here */
+#pset1{
+    position: relative;
+    left: 0;
+    right: 620px;
+    cursor: pointer;
+}
+ul li img{
+    width: 40px;
+    border-radius: 20px;
+    word-spacing: 10px;
+    cursor: pointer;
+}
+/*that class ki css starts from here */
+.that
+{
+  display:  flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+
+  /* Styling for the main contact section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+  }
+
+  /* Styling for the left side content */
+  .left-content {
+   
+    padding-right: 0px;
+  }
+
+  /* Styling for the right side content (contact form) */
+  .right-content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.678);
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}
+</style>
+
+
+
+
+<style>
+  @media (min-width:480px) and (max-width:1100px) 
+{
+    *{
+        padding: 0;
+        margin: 0;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+/*pset id ki css starts from here */
+#pset{
+    position: relative;
+    left: 0px;
+    right: 600px;
+}
+
+/*pset1 id ki css starts from here */
+#pset1{
+    position: relative;
+    left: 0;
+    right: 620px;
+    cursor: pointer;
+}
+ul li img{
+    width: 40px;
+    border-radius: 20px;
+    word-spacing: 10px;
+    cursor: pointer;
+}    
+
+/*main id ki css starts from here */
+#main{
+  height: 500px;
+  width: 475px;
+  border: 4px ;
+  margin: auto;
+  box-shadow:0px 1px 4px 4px rgb(178, 90, 205);
+  box-sizing: border-box;
+  border-radius: 30px;
+  
+}
+/*that class ki css starts from here */
+.that
+{
+  display:  flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}    
+
+
+
+
+  /* Styling for the main contact section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+  }
+
+  /* Styling for the left side content */
+  .left-content {
+   
+    padding-right: 0px;
+  }
+
+  /* Styling for the right side content (contact form) */
+  .right-content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.678);
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+
+
+
+
+}
+
+</style>
+<style>
+  @media (min-width:980px)and (max-width:1100px) {
+   
+/*main id ki css starts from here */
+#main{
+  height: 500px;
+  width: 800px;
+  border: 4px ;
+  margin: auto;
+  box-shadow:0px 1px 4px 4px rgb(178, 90, 205);
+  box-sizing: border-box;
+  border-radius: 30px;
+  
+}
+
+  /* Styling for the main contact section */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+  }
+
+  /* Styling for the left side content */
+  .left-content {
+   
+    padding-right: 0px;
+  }
+
+  /* Styling for the right side content (contact form) */
+  .right-content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.678);
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  }
+</style>
+
+</head>
+<body id="home">
+
+
+
+<ul id="set">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#aboutme">About Me</a></li>
+  <li><a href="#section1">Contact</a></li>
+  <li><a href="#">Resume</a></li>
+  <li id="pset"> <abbr title="Instagram"><img src="inst.jpeg" alt=""></abbr></li>
+    <li id="pset1"><abbr title="Linkedin"><img src="l.png" alt=""></abbr></li>
+    
+</ul>
+
+<br><br>
+<div id="main">
+  <img src="WhatsApp Image 2023-08-26 at 16.00.01.jpg" alt="">
+  <div id="description"> <h1 id="setmore"></h1></div>
+</div>
+
+<br><br><br><br><br><br><br id="aboutme">
+<div id="thatmain"> <h1> ABOUT ME</h1>
+  <br><br>
+<div class="that">
+  <div><img src="icon1.png" alt="" width="50px" height="50px"><h2>Introduction</h2><p>Hello and welcome to my portfolio website! I am thrilled to have you here. My name is Priyanshu Satija, and I am a passionate for My IT career with a strong dedication towards my skill . Through this platform, I am excited to take you on a journey through my professional experiences, creative endeavors, and accomplishments.</p></div>
+  <div id="content"><img src="icon2.png" alt="" width="70px" height="70px"><h2>Skills</h2><p>"I excel in a range of technical skills crucial for crafting dynamic web applications. With expertise in C++, HTML, CSS, and JavaScript, I create captivating user interfaces and seamless functionality. My proficiency extends to Oracle databases, ensuring efficient and secure data management. I'm skilled in JSP (JavaServer Pages) for dynamic web content and possess a solid foundation in Data Structures and Algorithms, enhancing my problem-solving abilities. Explore my portfolio to see these skills in action, showcasing my dedication to delivering top-notch web experiences."    </p></div>
+  <div id="content"><img src="icon3.png" alt="" width="70px" height="70px"><h2>Hobbies</h2><p>"In my leisure time, I find joy in spending quality moments with both family and friends, cherishing the essence of life through shared experiences. I am an avid enthusiast of podcasts, often exploring diverse topics on YouTube. Additionally, I'm passionate about playing cricket, which not only fuels my competitive spirit but also fosters teamwork. During moments of relaxation, I engage in typing practice, refining my skills in pursuit of efficiency and accuracy."</p></div>
+</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br>
+
+
+
+
+<section class="contact-section" id="section1">
+  <div class="left-content">
+    <h2>Contact Information</h2>
+    <p>Feel free to get in touch with us using the following information:</p>
+    <p>Email: satija286@gmail.com</p>
+    <p>Phone: 8950363565</p>
+  </div>
+  <div class="right-content">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text\" id="name" name="name" required placeholder="Enter your name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your Email -ID">
+      
+      <label for="message">Message:</label>
+      
+      <textarea name="jk" id="ok" cols="10" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</section>
+
+
+
+
+
+<br><br><br><br><br><br><br>
+
+  <div class="footer" id="footer">
+    <div>
+    <h2>"Connecting Vision and Creativity: Exploring My Journey Through Design</h2>
+    
+    <p>&copy; 2023 Priyanshu Satija . All rights reserved.</p>
+    <p>Designed and built by Priyanshu Satija.</p>
+  </div>
+  <div>
+    <a href="">    <abbr title="Gmail-ID">  <img src="gmail.png" alt=""  id="gmail"></abbr></a>
+    <a href="">    <abbr title="Gmail-ID">  <img src="whatsapp.png" alt=""  id="gmail"></abbr></a>
+  </div>
+</div>
+<script>
+
+setInterval(  function main()
+{
+
+
+  setTimeout(  function ja(){
+    var j=document.getElementById("setmore");
+    j.innerHTML="I Welcome you";
+    j.style.color="brown";
+    j.style.fontSize="50px";
+  },8000);
+
+
+  setTimeout(  function ja(){
+    var j=document.getElementById("setmore").innerHTML;
+    var jj=document.getElementById("setmore");
+    jj.innerHTML="Welcome";
+    jj.style.fontStyle="italic";
+    jj.style.fontFamily="monospace";
+    jj.style.fontWeight="bolder"
+    jj.style.color="black";
+  },10000);
+
+
+  setTimeout(  function ja(){
+    var j=document.getElementById("setmore").innerHTML;
+    var jj=document.getElementById("setmore");
+    jj.innerHTML=j+"  on My <br> ";
+    jj.style.fontStyle="italic";
+    jj.style.fontFamily="sans";
+    jj.style.fontWeight="bolder"
+    jj.style.color="blue";
+    
+  },13000);
+
+  setTimeout(  function ja(){
+    var j=document.getElementById("setmore").innerHTML;
+    var jj=document.getElementById("setmore");
+    jj.innerHTML=j+"   PortFolio Website";
+    jj.style.color="brown"
+  },16000);
+
+
+
+  setTimeout(function ok()
+    {
+      var j=document.getElementById("setmore").innerHTML="";   
+    },18000)
+
+  },10000)
+</script>
+</body>
+</html>
+
+ 
